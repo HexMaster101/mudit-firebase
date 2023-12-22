@@ -1,0 +1,689 @@
+@font-face {
+	font-family: myFont;
+	src: url(/Young_Serif/EBGaramond-VariableFont_wght.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	background-color: #ffffff;
+	font-family: myFont, sans-serif;
+}
+
+main[name="blogSection"] {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+article {
+	width: 980px;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	margin-top: 64px;
+	margin-bottom: 64px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border: 1px solid lightgray;
+}
+
+/* ========================
+  NavBar section
+========================   */
+
+.navbar-upper {
+	background-color: #404040;
+	padding: 5px 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.logo-label {
+	color: #ffffff;
+	margin-left: 0.5rem;
+	font-weight: 600;
+	font-size: 25px;
+}
+
+#geojuristoday-logo {
+	background-image: url("images/logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 62.5px;
+	width: 62.5px;
+}
+
+.navbar-upper nav {
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar-upper li {
+	list-style: none;
+	padding: 10px 10px;
+	margin-left: 0px;
+}
+
+.navbar-upper li a {
+	text-decoration: none;
+	padding: 5px 2px;
+	font-size: 20px;
+	display: block;
+	font-weight: 600;
+	color: white;
+	position: relative;
+	transition: all 0.25s;
+}
+
+.navbar-upper li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: auto;
+	bottom: 0;
+	height: 2.5px;
+	background-color: #c5aa6a;
+	transition: all 0.25s;
+	width: 0%;
+}
+
+.navbar-upper li a:hover {
+	color: #c5aa6a;
+}
+
+.navbar-upper li a:hover::after {
+	width: 100%;
+	right: 0;
+	left: auto;
+}
+
+.mobile-navbar-btn {
+	display: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.mobile-nav-icon {
+	height: 40px;
+	width: 40px;
+	color: #ffffff;
+}
+
+.whiteColor {
+	background-color: #ffffff;
+}
+
+.bakchodColor {
+	background-color: #c4c4c4;
+}
+
+.navbar-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+.social-media-handles-con {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 5px;
+}
+
+.icons-con {
+	height: 34px;
+	width: 34px;
+	background-color: #404040;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	margin-right: 4px;
+}
+
+.icons-con:hover {
+	background-color: #2f2f2f;
+}
+
+.icons {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.contact-us {
+	margin-left: 15px;
+}
+
+.join-us-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 34px;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0px 20px;
+	margin-right: 20px;
+	cursor: pointer;
+	background-color: #404040;
+	border-radius: 200px;
+	color: #ffffff;
+}
+
+.join-us-button:hover {
+	background-color: #2f2f2f;
+	color: #ffffff;
+}
+
+.email-link {
+	color: #2f2f2f;
+	font-weight: 600;
+	font-size: 19px;
+	text-decoration: none;
+}
+
+/* ========================
+  Body section
+========================   */
+
+#home-background-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #c4c4c4;
+}
+
+.background-image {
+	height: 100vh;
+	width: 100%;
+	background-image: url("/images/35587976_8312401\ copy.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#goals-section {
+	text-align: center;
+	padding: 54px;
+}
+
+.goals-head {
+	font-size: 40px;
+	color: #2f2f2f;
+	margin-top: 10px;
+	padding: 6.25px 0px;
+}
+
+.goals-head span {
+	color: #c5aa6a;
+}
+
+.goals-description {
+	color: #606060;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.goals-grid {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 50px;
+	place-items: center;
+}
+
+.goals-grid div {
+	padding: 24px 60px;
+	text-align: left;
+}
+
+.goals-item-head {
+	font-size: 20px;
+	color: #2f2f2f;
+	padding: 12.5px 0px;
+}
+
+.goals-item-para {
+	font-size: 15px;
+	color: #606060;
+}
+
+.golden-parameter {
+	height: 5px;
+	background-color: #c5aa6a;
+}
+
+.blogs-head {
+	text-align: center;
+	font-size: 48px;
+	margin-top: 48px;
+}
+
+.blogs-con {
+	display: flex;
+	padding: 30px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.blog2 {
+	padding: 30px;
+	width: 350px;
+	border: solid 1px lightgray;
+}
+
+.blog-img-con {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.blog-img {
+	height: 200px;
+	width: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.blog-des-head {
+	font-size: 20px;
+	color: #2f2f2f;
+	margin-top: 40px;
+}
+
+.blog-des-para {
+	font-size: 15px;
+	margin-top: 22px;
+	color: #606060;
+}
+
+.blog-main-head {
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 90px;
+	color: #2f2f2f;
+}
+
+.blog-head {
+	text-transform: capitalize;
+	margin-top: 32px;
+	font-weight: 600;
+	color: #2f2f2f;
+	font-size: 20px;
+}
+
+.blog-para {
+	margin-top: 24px;
+	font-weight: 500;
+	color: #606060;
+}
+
+#national-emblem-section {
+	background-image: url("/images/31842683_7859019\ copy.png");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 400px;
+}
+
+#national-emblem-section div {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 4rem;
+}
+
+.national-emblem-text {
+	color: black;
+	font-size: 26px;
+	margin-right: 4rem;
+	width: 600px;
+}
+
+/* ========================
+  Responsive Codes
+========================   */
+
+@media (max-width: 1100px) {
+	#national-emblem-section {
+		background-image: url("/images/31842683_78590192\ copy.png");
+		height: 350px;
+	}
+
+	#national-emblem-section div {
+		justify-content: center;
+		padding: 2rem;
+	}
+
+	.national-emblem-text {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 980px) {
+	.logo-label {
+		font-size: 22px;
+	}
+
+	#geojuristoday-logo {
+		height: 50px;
+		width: 50px;
+	}
+
+	.navbar-upper li a {
+		font-size: 18px;
+	}
+
+	.email-link {
+		font-size: 16px;
+	}
+
+	.join-us-button {
+		height: 30px;
+		font-size: 18px;
+	}
+
+	.icons-con {
+		height: 30px;
+		width: 30px;
+		margin-right: 2px;
+	}
+
+	.icons {
+		font-size: 18px;
+	}
+
+	.goals-grid {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 50px;
+		place-items: center;
+	}
+
+	.goals-grid div {
+		padding: 16px 30px;
+	}
+
+	.goals-head {
+		font-size: 36px;
+	}
+
+	.goals-description {
+		font-size: 15px;
+	}
+
+	.goals-item-head {
+		font-size: 18px;
+	}
+
+	.goals-item-para {
+		font-size: 13.5px;
+	}
+
+	#national-emblem-section {
+		height: 350px;
+	}
+
+	.national-emblem-text {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 800px) {
+	.mobile-navbar-btn {
+		display: block;
+	}
+
+	.logo-label {
+		font-size: 20px;
+	}
+
+	#geojuristoday-logo {
+		height: 48px;
+		width: 48px;
+	}
+
+	.navbar-upper nav {
+		inset: 0;
+		position: absolute;
+		background-color: #404040;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transform: translateX(-100%);
+		transition: all 0.5s linear;
+		opacity: 0;
+	}
+
+	.navbar-upper nav.show {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	.email-link {
+		font-size: 14px;
+	}
+
+	.join-us-button {
+		height: 26px;
+		font-size: 16px;
+		margin-right: 16px;
+	}
+
+	.icons-con {
+		height: 26px;
+		width: 26px;
+		margin-right: 2px;
+	}
+
+	.icons {
+		font-size: 16px;
+	}
+
+	.background-image {
+		background-image: url("images/GEOJURISTODAY.png");
+		width: 100vw;
+		height: 450px;
+	}
+
+	#goals-section {
+		padding: 30px;
+	}
+
+	.goals-head {
+		font-size: 30px;
+	}
+
+	.goals-description {
+		font-size: 12.75px;
+	}
+
+	.goals-item-head {
+		font-size: 15px;
+	}
+
+	.goals-item-para {
+		font-size: 11.75px;
+	}
+
+	.goals-grid div {
+		padding: 12px 24px;
+	}
+
+	#national-emblem-section {
+		height: 300px;
+	}
+
+	.national-emblem-text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 640px) {
+	.navbar-upper {
+		padding: 4px 16px;
+	}
+
+	.contact-us {
+		margin-left: 9px;
+	}
+
+	.goals-grid {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		margin-top: 50px;
+		place-items: center;
+	}
+
+	.goals-head {
+		font-size: 32px;
+	}
+
+	.goals-description {
+		font-size: 16px;
+	}
+
+	.goals-item-head {
+		font-size: 20px;
+	}
+
+	.goals-item-para {
+		font-size: 15px;
+	}
+
+	#national-emblem-section {
+		height: 250px;
+	}
+
+	.national-emblem-text {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 430px) {
+	.navbar-upper {
+		padding: 4px 10px;
+	}
+
+	.logo-label {
+		font-size: 16px;
+	}
+
+	#geojuristoday-logo {
+		height: 40px;
+		width: 40px;
+	}
+
+	.contact-us {
+		margin-left: 7px;
+	}
+
+	.email-link {
+		font-size: 13px;
+		font-weight: 600;
+	}
+
+	.social-media-handles-con {
+		margin-right: 4px;
+	}
+
+	.join-us-button {
+		height: 22px;
+		font-size: 14px;
+		margin-right: 10px;
+	}
+
+	.icons-con {
+		height: 22px;
+		width: 22px;
+		margin-right: 2px;
+	}
+
+	.icons {
+		font-size: 14px;
+	}
+}
+
+
+
+/* Default styles for the button */
+.login-register-button {
+	position: relative;
+	display: inline-block;
+	margin-top: 10px;
+	
+  }
+  
+  .login-register-link {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #404040;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+	
+  }
+  
+  .login-register-animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s ease;
+	z-index: -1;
+  }
+  
+  /* Hover effect */
+  .login-register-button:hover .login-register-link {
+	background-color: #00a4e0;
+  }
+  
+  .login-register-button:hover .login-register-animation {
+	transform: scaleX(1);
+  }
+  
+  /* Media Query for Responsive Design */
+  @media screen and (max-width: 768px) {
+	.login-register-button {
+	  margin-top: 10px; /* Adjust spacing as needed for smaller screens */
+	}
+  
+	.login-register-link {
+	  padding: 8px 16px; /* Adjust padding for smaller screens */
+	}
+  }
+  

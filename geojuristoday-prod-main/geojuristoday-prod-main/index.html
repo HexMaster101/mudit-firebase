@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Geo Jury</title>
+		<link rel="stylesheet" href="./public/style.css" />
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./public/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./public/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./public/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./public/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./public/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<script
+			src="https://kit.fontawesome.com/5e0719df55.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js"></script>
+	</head>
+	<body>
+		<!-- NAVBAR SECTION -->
+
+		<header class="navbar">
+			<div class="navbar-upper">
+				<div class="logo-section">
+					<div id="geojuristoday-logo"></div>
+					<label for="geojuristoday-logo" class="logo-label"
+						>GEOJURISTODAY</label
+					>
+				</div>
+				<nav id="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Posts</a></li>
+					<li><a href="#">Timeline</a></li>
+					<li><a href="#">Interview</a></li>
+					<li><a href="#">About</a></li>
+					<div class="login-register-button">
+						<a href="./public/Login/Form.html" class="login-register-link"
+							>Login / Register</a
+						>
+						<div class="login-register-animation"></div>
+					</div>
+				</nav>
+				<div class="mobile-navbar-btn" id="nav-btn">
+					<ion-icon
+						name="menu-outline"
+						class="mobile-nav-icon"
+						id="menuOutline"
+					></ion-icon>
+				</div>
+			</div>
+			<div class="navbar-bottom bakchodColor">
+				<div class="contact-us">
+					<p>
+						<a class="email-link" href="mailto:geojuristoday@gmail.com"
+							>geojuristoday@gmail.com</a
+						>
+					</p>
+				</div>
+
+				<div class="social-media-handles-con">
+					<a
+						href="https://docs.google.com/forms/d/e/1FAIpQLSeLoxZn9bog11fofwpnYbD_NeStmuh6LaEcTZJpGHcLbme6sQ/viewform?usp=sf_link"
+						target="_blank"
+						><div class="join-us-button">JOIN US</div></a
+					>
+					<a
+						href="https://instagram.com/geojuristoday?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+						target="_blank"
+					>
+						<div class="icons-con">
+							<ion-icon name="logo-instagram" class="icons"></ion-icon>
+						</div>
+					</a>
+					<a href="https://x.com/geojuristoday/" target="_blank">
+						<div class="icons-con">
+							<ion-icon name="logo-twitter" class="icons"></ion-icon>
+						</div>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/the-geojuristoday-182a4a291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+						target="_blank"
+					>
+						<div class="icons-con">
+							<ion-icon name="logo-linkedin" class="icons"></ion-icon>
+						</div>
+					</a>
+					<a
+						href="https://www.facebook.com/profile.php?id=61550904631717&mibextid=LQQJ4d"
+						target="_blank"
+					>
+						<div class="icons-con">
+							<ion-icon name="logo-facebook" class="icons"></ion-icon>
+						</div>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- MAIN BODY -->
+
+		<main name="homeSection">
+			<section id="home-background-section">
+				<div class="background-image"></div>
+			</section>
+			<section id="goals-section">
+				<h1 class="goals-head">Our Goals And <span>Vision</span></h1>
+				<p class="goals-description">
+					At Geojuristoday, we are on a mission to illuminate the intricate
+					interplay between<br />
+					Geopolitics and Law, bringing you a fresh and distinctively Indian
+					perspective on global affairs.
+				</p>
+				<div class="goals-grid">
+					<div>
+						<h1 class="goals-item-head">Youth-Led and Independent</h1>
+						<p class="goals-item-para">
+							We are a vibrant, youth-led think tank driven by the passion and
+							vision of our dynamic team. Our independence allows us to provide
+							unbiased analysis and a platform for the voices of the future.
+						</p>
+					</div>
+					<div>
+						<h1 class="goals-item-head">Analyzing the World</h1>
+						<p class="goals-item-para">
+							Our dedicated team is committed to dissecting the world's most
+							pressing issues, exploring the global landscape from a unique
+							Indian lens. By doing so, we aim to deepen our understanding of
+							the complex forces shaping our planet.
+						</p>
+					</div>
+					<div>
+						<h1 class="goals-item-head">A Distinctively Indian Take</h1>
+						<p class="goals-item-para">
+							India's rich history, culture, and diversity offer a unique
+							vantage point for understanding global dynamics. Geojuristoday
+							endeavors to shed light on how India's narrative interweaves with
+							the world stage.
+						</p>
+					</div>
+					<div>
+						<h1 class="goals-item-head">Promoting "The India Way"</h1>
+						<p class="goals-item-para">
+							We stand behind the principles of Dr. S. Jaishankar's "The India
+							Way" diplomacy, emphasizing a pragmatic, non-aligned approach that
+							champions India's interests on the global stage.
+						</p>
+					</div>
+					<div>
+						<h1 class="goals-item-head">Empowering You</h1>
+						<p class="goals-item-para">
+							We're here to empower and inform, to keep you abreast of world
+							affairs, and to inspire you to engage in meaningful discourse.
+							Knowledge is power, and at Geojuristoday, we strive to arm you
+							with the insights you need to shape the future.
+						</p>
+					</div>
+					<div></div>
+				</div>
+			</section>
+
+			<section id="blogs-section">
+				<div class="golden-parameter"></div>
+				<h1 class="blogs-head">Editor's Pick</h1>
+				<div class="blogs-con" id="blogsCon"></div>
+			</section>
+			<section id="national-emblem-section">
+				<div>
+					<h1 class="national-emblem-text">
+						"India seeks to promote cooperation with diverse partners. From the
+						era of Non-Alignment, we have now evolved to that of 'Vishwa Mitra'
+						~ a friend to the world"
+					</h1>
+				</div>
+			</section>
+		</main>
+
+		<!-- SCRIPT -->
+
+		<script src="/main.js" type="text/javascript"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
